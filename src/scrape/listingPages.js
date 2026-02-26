@@ -254,6 +254,8 @@ log.info("DEBUG ul classes (first 30)" );
 
     const next = await hasNextEnabled(page);
 
+
+    //no pagination 
     // ✅ If no pagination exists, we are in “single page mode”
     if (!next.exists) {
       log.info("No pagination detected => single page mode. Stopping.");
